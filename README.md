@@ -8,7 +8,7 @@ Este script é projetado para ser rápido e modular, permitindo que você altere
 
   * **Concorrente:** Usa goroutines para se conectar a dezenas ou centenas de dispositivos simultaneamente, tornando o processo de coleta extremamente rápido.
   * **Baseado em Excel:** Lê a lista de IPs de um arquivo `.xlsx` e salva os resultados de volta no mesmo arquivo.
-  * **Mult-Planilha:** Processa automaticamente *todas* as planilhas (abas) presentes no arquivo Excel.
+  * **Multi-Planilha:** Processa automaticamente *todas* as planilhas (abas) presentes no arquivo Excel.
   * **Modular:** O comando, o padrão RegEx para captura e as colunas do Excel são facilmente configuráveis através de constantes no topo do código.
 
 ## Pré-requisitos
