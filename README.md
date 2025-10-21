@@ -4,6 +4,8 @@ Um script em Go para coletar dados de múltiplos dispositivos via SSH de forma c
 
 Este script é projetado para ser rápido e modular, permitindo que você altere facilmente o comando SSH e o dado que deseja extrair (via RegEx) sem precisar alterar a lógica principal.
 
+Originalmente desenvolvido em Python para coletar dados de múlltiplos APs Watchguard.
+
 ## Funcionalidades
 
   * **Concorrente:** Usa goroutines para se conectar a dezenas ou centenas de dispositivos simultaneamente, tornando o processo de coleta extremamente rápido.
@@ -44,7 +46,7 @@ const (
 // -------------------------------------------------------------------
 ```
 
-Por exemplo, se você quisesse capturar o "Uptime" do comando `show version`, você poderia alterar as constantes para:
+Por exemplo, se você quer capturar o "Uptime" do comando `show version`, você precisa alterar as constantes para:
 
 ```go
 const (
